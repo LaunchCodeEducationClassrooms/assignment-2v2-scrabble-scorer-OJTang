@@ -50,7 +50,7 @@ function initialPrompt() {
 let simpleScore = function(word) {
   let score = 0;
   score = word.length;
-  return `Points for \"${word}\": ${Number(score)}.`
+  return score;
 };
 
 let vowelBonusScore = function(word) {
@@ -63,7 +63,7 @@ let vowelBonusScore = function(word) {
       score = score + 1;
     }
   }
-  return `Points for \"${word}\": ${Number(score)}.`;
+  return score;
 };
 
 
@@ -152,7 +152,7 @@ let scrabbleScore = function(word) {
       }
     }
   }
-	return `Points for \"${word}\": ${Number(score)}.`;
+	return score;
 }
 
 function runProgram() {
