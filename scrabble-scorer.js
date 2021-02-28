@@ -123,9 +123,10 @@ function scorerPrompt(initialPrompt) {
   }
 }
 
-let newObject = {};
+
 
 function transform(object) {
+  let newObject = {};
   for (key in object) {
     for (i = 0; i < object[key].length; i++) {
     if (key === '1') {
@@ -149,6 +150,8 @@ function transform(object) {
 }
     
 let newPointStructure = transform(oldPointStructure);
+
+
 
 newPointStructure[' '] = 0;
 
